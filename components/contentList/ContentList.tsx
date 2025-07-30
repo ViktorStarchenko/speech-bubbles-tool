@@ -6,12 +6,8 @@ import {AppDispatch} from "../../store/store";
 import { contentSliceActions } from '../../store/contentSlice';
 import ContentListItem from "./ContentListItem";
 
-type Props = {
-    text: string
-}
 
-
-export default function ContentList({text = 'Lorem'}: Props): JSX.Element {
+export default function ContentList(): JSX.Element {
     const dispatch = useDispatch<AppDispatch>();
     const content = useSelector((state:RootState) => state.content.content);
 
