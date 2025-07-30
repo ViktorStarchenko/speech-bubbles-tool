@@ -293,3 +293,16 @@ a {
   padding: 10px;
   border: 1px solid var(--muted);
 }
+
+@media (max-width: 992px) {
+  .main-container {
+    flex-direction: column-reverse;
+  }
+  .tools-bar {
+    max-width: unset;
+  }
+  .editor-font-size {
+    justify-content: flex-start;
+    gap: 15px;
+  }
+}
