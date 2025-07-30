@@ -1,4 +1,8 @@
-export default function Tools({children}) {
+type Props = {
+    children: React.ReactNode
+}
+
+export default function Tools({children}: Props) {
 
     return (
         <div className="tools-bar">
