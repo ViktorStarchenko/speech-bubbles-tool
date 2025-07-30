@@ -11,7 +11,7 @@ import {AppDispatch} from "../../store/store";
 import {contentSliceActions} from "../../store/contentSlice";
 import SaveImageButton from "../SaveImageButton/SaveImageButton";
 
-export default function Preview(): JSX.Element {
+export default function Preview() {
     const dispatch = useDispatch<AppDispatch>();
     const content = useSelector((state:RootState) => state.content.content);
     console.log("content Preview", content)
