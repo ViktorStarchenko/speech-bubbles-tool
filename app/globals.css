@@ -15,6 +15,9 @@
   --danger: #EB5757;
   --secondary: #6E6E73;
   --surface: #FFFFFF;
+  --font-comic-neue: sans-serif;
+  --font-kalam: sans-serif;
+  --font-rubik: sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -140,6 +143,9 @@ a {
   padding: 10px;
   position: relative;
   z-index: 10;
+  font-family: var(--font-comic-neue);
+  /*font-family: var(--font-kalam);*/
+  /*font-family: var(--font-rubik);*/
 }
 .speech-bubble-resize-handler {
   width: 20px;

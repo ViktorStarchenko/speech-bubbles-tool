@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { comicNeue, kalam, rubik } from './fonts';
 
 import { Providers } from './providers';
 
@@ -27,7 +28,7 @@ export default function RootLayout({
   return (
       <Providers>
         <html lang="en">
-          <body className={`${geistSans.variable} ${geistMono.variable}`}>
+          <body className={`${geistSans.variable} ${geistMono.variable} ${comicNeue.variable} ${kalam.variable} ${rubik.variable}`}>
             {children}
           </body>
         </html>
