@@ -7,7 +7,7 @@ type Props = {
     style?: React.CSSProperties;
 }
 
-export default function DraggableItem({ id, children, style }: Props): JSX.Element {
+export default function DraggableItem({ id, children, style }: Props) {
     const { attributes, listeners, setNodeRef } = useDraggable({
         id: id,
     });
