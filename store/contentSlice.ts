@@ -52,7 +52,14 @@ export const contentSlice = createSlice({
             // state.imageFile = action.payload.file;
             state.content.push(action.payload);
         },
-        removeContent(state, action: PayloadAction<ContentItem[]>) {
+        removeContent(state, action: PayloadAction<{
+            id: string,
+            text: string,
+            active: boolean,
+            style: string,
+            positionX: number,
+            positionY: number
+        }>) {
             // state.imageFile = null;
             state.content = state.content.filter(item => item.id != action.payload.id);
         },
