@@ -318,7 +318,7 @@ a {
 
 .info-section {
   padding: 80px 0;
-  background-color: var(--secondary);
+  background-color: var(--primary);
   color: var(--surface);
 }
 .info-list {
