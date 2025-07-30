@@ -26,8 +26,6 @@ export interface ContentItem {
     style: string;
     positionX: number;
     positionY: number;
-    fontSize: string;
-    fontWeight: string;
 }
 
 interface ContentState {
@@ -49,9 +47,7 @@ export const contentSlice = createSlice({
             active: boolean,
             style: string,
             positionX: number,
-            positionY: number,
-            fontSize: string,
-            fontWeight: string,
+            positionY: number
         }>) {
             // state.imageFile = action.payload.file;
             state.content.push(action.payload);
