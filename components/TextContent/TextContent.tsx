@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React, { useRef, useState } from "react";
-import resizeIcon from '@/assets/images/right.png'
 
 type Props = {
     item: {
@@ -13,7 +12,7 @@ type Props = {
     }
 }
 
-export default function TextContent({item}: Props): JSX.Element {
+export default function TextContent({item}: Props) {
     const [width, setWidth] = useState(200);
     const [height, setHeight] = useState(100);
     const resizerRef = useRef<HTMLDivElement>(null);
@@ -56,18 +55,8 @@ export default function TextContent({item}: Props): JSX.Element {
                 className="speech-bubble-resize-handler"
                 ref={resizerRef}
                 onMouseDown={handleMouseDown}
-                // style={{
-                //     position: 'absolute',
-                //     top: 0,
-                //     right: 0,
-                //     width: '10px',
-                //     height: '100%',
-                //     cursor: 'ew-resize',
-                //     zIndex: 10,
-                // }}
             >
                 <span className="speech-bubble-resize-arrow">⤡</span>
-                {/*<Image src={resizeIcon.src} alt="resize" title="resize" fill/>*/}
             </div>
         </div>
     )
