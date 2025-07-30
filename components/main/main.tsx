@@ -4,7 +4,7 @@ interface MainProps {
     children: ReactNode;
 }
 
-export default function Main({ children }: MainProps): JSX.Element {
+export default function Main({ children }: MainProps) {
     return (
         <div className="main-container">{children}</div>
     );

@@ -7,7 +7,7 @@ import { contentSliceActions } from '../../store/contentSlice';
 import ContentListItem from "./ContentListItem";
 
 
-export default function ContentList(): JSX.Element {
+export default function ContentList() {
     const dispatch = useDispatch<AppDispatch>();
     const content = useSelector((state:RootState) => state.content.content);
 

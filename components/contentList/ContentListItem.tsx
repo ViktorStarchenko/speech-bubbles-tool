@@ -72,7 +72,7 @@ type Props = {
     }
 }
 
-export default function ContentListItem({item}: Props): JSX.Element {
+export default function ContentListItem({item}: Props) {
     const dispatch = useDispatch<AppDispatch>();
     const content = useSelector((state:RootState) => state.content.content);
 
