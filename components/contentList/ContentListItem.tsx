@@ -3,6 +3,7 @@
 import {contentSliceActions} from "../../store/contentSlice";
 import {useDispatch, useSelector} from "react-redux";
 import {AppDispatch} from "../../store/store";
+import { RootState } from "../../store/store";
 
 import React, { useState } from 'react';
 import TipTapEditor from '../TipTapEditor/TipTapEditor';
