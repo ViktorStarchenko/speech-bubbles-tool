@@ -2,22 +2,42 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import {imageSlice} from "./imageSlice";
 
-interface contentState {
-    content: [
-        {
-            id: string,
-            text: string,
-            active: boolean,
-            style: string,
-            positionX: number,
-            positionY: number
-        }
-    ]
+// interface contentState {
+//     content: [
+//         {
+//             id: string,
+//             text: string,
+//             active: boolean,
+//             style: string,
+//             positionX: number,
+//             positionY: number
+//         }
+//     ]
+// }
+
+// const initialContentState = {
+//     content: []
+// }
+
+export interface ContentItem {
+    id: string;
+    text: string;
+    active: boolean;
+    style: string;
+    positionX: number;
+    positionY: number;
+    fontSize: string;
+    fontWeight: string;
 }
 
-const initialContentState = {
-    content: []
+interface ContentState {
+    content: ContentItem[];
 }
+
+
+const initialContentState: ContentState = {
+    content: []
+};
 
 export const contentSlice = createSlice({
     name: 'content',
@@ -40,7 +60,7 @@ export const contentSlice = createSlice({
             // state.imageFile = null;
             state.content = state.content.filter(item => item.id != action.payload.id);
         },
-        replaceContent(state, action: PayloadAction) {
+        replaceContent(state, action: PayloadAction<ContentItem[]>) {
             state.content = action.payload;
         }
     }
