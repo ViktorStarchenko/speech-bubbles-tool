@@ -21,8 +21,8 @@ export default function ImageForm() {
     };
 
     return (
-        <form>
-            <label htmlFor="image-upload">Upload Image:</label>
+        <form className="image-upload-form">
+            <label htmlFor="image-upload">Upload Image <span className="danger-color image-upload-arrow">➘</span>  </label>
             <input type="file" id="image-upload" accept="image/*" onChange={handleImageChange} />
         </form>
     );
