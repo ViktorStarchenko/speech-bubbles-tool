@@ -156,6 +156,7 @@ a {
   padding: 10px;
   position: relative;
   z-index: 10;
+  color: #000;
   font-family: var(--font-comic-neue);
   /*font-family: var(--font-kalam);*/
   /*font-family: var(--font-rubik);*/

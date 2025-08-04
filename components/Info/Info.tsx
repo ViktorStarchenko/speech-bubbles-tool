@@ -12,6 +12,7 @@ export default function Info() {
                         <li>Drag and drop the bubble to the desired position. Adjust the size if necessary.</li>
                         <li>When you are sure that everything is done, just click "Save image"</li>
                         <li>We do not store your images. Your images and content settings are stored only until you refresh the page.</li>
+                        <li>*Please note that the tool is not optimized for touchscreen devices so it may not work on your smartphone.</li>
                     </ul>
                 </div>
             </div>
