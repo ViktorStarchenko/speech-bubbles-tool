@@ -110,10 +110,14 @@ a {
   transform: rotateZ(80deg);
   font-weight: 700;
 }
-.image-upload {
+.image-upload-form label {
   width: 100%;
   display: flex;
   align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
 }
 .tools-bar {
   width: 100%;
